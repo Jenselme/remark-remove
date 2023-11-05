@@ -1,6 +1,8 @@
 # remark-remove
 
-Remark plugin to output a string with all markdown formatting removed
+Remark plugin to output a string with all markdown formatting removed.
+
+Install it with `npm install remark-remove` or `yarn add remark-remove`.
 
 Usage:
 
