@@ -1,0 +1,40 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "suite": "readonly",
+    "test": "readonly"
+  },
+  "rules": {
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": "import",
+        "format": ["camelCase", "PascalCase"]
+      }
+    ],
+    "@typescript-eslint/semi": "error",
+    "linebreak-style": ["error", "unix"],
+    "max-len": [2, 120, 4],
+    "no-var": "error",
+    "no-shadow": "error",
+    "no-shadow-restricted-names": "error",
+    "no-unused-vars": ["error", { "args": "none" }],
+    "no-undef": "error",
+    "no-cond-assign": [2, "always"],
+    "no-console": "error",
+    "curly": ["error", "multi-line"],
+    "eqeqeq": "error",
+    "no-throw-literal": "warn",
+    "semi": "off"
+  },
+  "ignorePatterns": ["out", "dist", "**/*.d.ts"]
+}

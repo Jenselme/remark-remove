@@ -1,0 +1,41 @@
+{
+  "name": "remark-remove",
+  "version": "1.0.0",
+  "description": "Remark plugin to output a string with all markdown formatting removed",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "exports": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src --ext ts && prettier --check src",
+    "lint:fix": "prettier --write src && eslint src --ext ts --fix",
+    "compile": "tsc",
+    "publish": "npm run compile && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenselme/remark-remove.git"
+  },
+  "author": "Jenselme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jenselme/remark-remove/issues"
+  },
+  "homepage": "https://github.com/Jenselme/remark-remove#readme",
+  "devDependencies": {
+    "@types/mdast": "^4.0.2",
+    "@types/vfile": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.53.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "vfile": "^6.0.1"
+  }
+}
